@@ -1,24 +1,25 @@
-# VIBE - Social Media Platform
+# VybeHub - Social Media Platform
 
-A modern, full-stack social media application built with React, Node.js, Express, MongoDB, and Socket.io. VIBE enables users to connect, share moments, chat in real-time, and discover exciting content.
+A modern, full-stack social media application built with React, Node.js, Express, MongoDB, and Socket.io. Vybe enables users to connect, share moments, chat in real-time, and discover exciting content.
 
-![VIBE Home](./docs/home-screen.png)
+![Vybe Home](./docs/home-screen.png)
 
 ## � Live Demo
 
-**Try VIBE now:** [https://vybe-have-fun.vercel.app/](https://vybe-have-fun.vercel.app/)
+**Try Vybe now:** [https://vybe-have-fun.vercel.app/](https://vybe-have-fun.vercel.app/)
 
 ---
 
 ## �🎯 Overview
 
-VIBE is a feature-rich social platform that combines the best elements of modern social networks. Users can share posts and reels, create stories, message friends in real-time, and engage through likes, comments, and follows. The platform uses WebSocket technology for instant messaging and online user tracking.
+Vybe is a feature-rich social platform that combines the best elements of modern social networks. Users can share posts and reels, create stories, message friends in real-time, and engage through likes, comments, and follows. The platform uses WebSocket technology for instant messaging and online user tracking.
 
 ---
 
 ## ✨ Key Features
 
 ### 👤 Authentication & User Management
+
 - **Sign Up/Sign In** - Secure user registration with bcryptjs password hashing
 - **Forgot Password** - OTP-based password reset via email
 - **User Profiles** - Customize profiles with:
@@ -31,7 +32,9 @@ VIBE is a feature-rich social platform that combines the best elements of modern
 - **Online Status** - Real-time online/offline indicators via WebSocket
 
 ### 📸 Posts
+
 Share images and videos with your audience
+
 - **Create Posts** - Upload photos/videos with captions
 - **Media Support** - Images and video uploads via Cloudinary
 - **Engage with Posts**:
@@ -41,10 +44,12 @@ Share images and videos with your audience
 - **Save Posts** - Bookmark posts for later
 - **Feed** - Chronological feed of posts from followed users
 
-![VIBE Posts & Feed](./docs/feed-screen.png)
+![Vybe Posts & Feed](./docs/feed-screen.png)
 
 ### 🎬 Loops (Short Videos/Reels)
+
 Short-form video content for quick entertainment
+
 - **Create Loops** - Upload short video clips with captions
 - **Infinite Scroll** - Discover endless content
 - **Engage**:
@@ -54,7 +59,9 @@ Short-form video content for quick entertainment
 - **Loop Feed** - Browse through trending short videos
 
 ### 📖 Stories
+
 Temporary content that expires in 24 hours
+
 - **Create Stories** - Share photos and videos as stories
 - **Auto-Expiry** - Stories automatically expire after 24 hours
 - **Viewer Tracking** - See who viewed your stories
@@ -62,7 +69,9 @@ Temporary content that expires in 24 hours
 - **Story Ring** - Visual indicators for unviewed stories
 
 ### 💬 Real-Time Messaging
+
 Instant messaging powered by Socket.io WebSocket technology
+
 - **One-on-One Chat** - Private conversations with real-time delivery
 - **Online Indicators** - See when friends are online
 - **Message History** - View past conversations
@@ -70,10 +79,12 @@ Instant messaging powered by Socket.io WebSocket technology
 - **Typing Indicators** - See when others are typing (ready for implementation)
 - **Message Persistence** - All messages saved to database
 
-![VIBE Messages](./docs/messages-screen.png)
+![Vybe Messages](./docs/messages-screen.png)
 
 ### 🔔 Notifications
+
 Stay updated with real-time notifications
+
 - **Notification Types**:
   - Post/Loop Likes
   - Post/Loop Comments
@@ -83,10 +94,12 @@ Stay updated with real-time notifications
 - **Read/Unread Status** - Track notification status
 
 ### 🔍 Search & Discovery
+
 - **User Search** - Find and connect with other users
 - **Global Search** - Discover content and profiles
 
 ### 📱 Responsive Design
+
 - **Mobile Optimized** - Works seamlessly on all devices
 - **Tailwind CSS** - Modern, responsive UI framework
 - **Dark Theme** - Dark-themed interface for comfortable viewing
@@ -96,6 +109,7 @@ Stay updated with real-time notifications
 ## 🏗️ Tech Stack
 
 ### Frontend
+
 - **React 19** - UI library
 - **Vite** - Lightning-fast build tool
 - **Redux Toolkit** - State management
@@ -107,6 +121,7 @@ Stay updated with real-time notifications
 - **React Spinners** - Loading indicators
 
 ### Backend
+
 - **Node.js & Express** - Server and API
 - **MongoDB & Mongoose** - Database
 - **Socket.io** - WebSocket for real-time features
@@ -123,7 +138,7 @@ Stay updated with real-time notifications
 ## 📂 Project Structure
 
 ```
-VIBE/
+Vybe/
 ├── backend/
 │   ├── config/
 │   │   ├── cloudinary.js      # Cloudinary configuration
@@ -220,6 +235,7 @@ VIBE/
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Node.js (v14 or higher)
 - MongoDB (local or MongoDB Atlas)
 - npm or yarn
@@ -227,16 +243,17 @@ VIBE/
 ### Backend Setup
 
 1. **Navigate to backend directory**
+
    ```bash
    cd backend
    ```
-
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
-
 3. **Create `.env` file** in the backend directory
+
    ```env
    PORT=8000
    MONGODB_URI=your_mongodb_connection_string
@@ -248,32 +265,35 @@ VIBE/
    EMAIL_PASS=your_email_password
    FRONTEND_URL=http://localhost:5173
    ```
-
 4. **Start the backend server**
+
    ```bash
    npm run dev
    ```
+
    Server runs on `http://localhost:8000`
 
 ### Frontend Setup
 
 1. **Navigate to frontend directory**
+
    ```bash
    cd frontend
    ```
-
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
-
 3. **Start the development server**
+
    ```bash
    npm run dev
    ```
-   App runs on `http://localhost:5173`
 
+   App runs on `http://localhost:5173`
 4. **Build for production**
+
    ```bash
    npm run build
    ```
@@ -283,12 +303,14 @@ VIBE/
 ## 📡 API Endpoints
 
 ### Authentication
+
 - `POST /api/auth/signup` - User registration
 - `POST /api/auth/signin` - User login
 - `POST /api/auth/forgot-password` - Request password reset OTP
 - `POST /api/auth/reset-password` - Reset password with OTP
 
 ### User
+
 - `GET /api/user/profile/:userName` - Get user profile
 - `POST /api/user/edit-profile` - Update profile
 - `POST /api/user/follow/:userId` - Follow user
@@ -298,6 +320,7 @@ VIBE/
 - `GET /api/user/suggested` - Get suggested users
 
 ### Posts
+
 - `POST /api/post/create` - Create new post
 - `GET /api/post/all` - Get all posts
 - `GET /api/post/:postId` - Get single post
@@ -307,6 +330,7 @@ VIBE/
 - `DELETE /api/post/:postId` - Delete post
 
 ### Loops (Reels)
+
 - `POST /api/loop/create` - Create new loop
 - `GET /api/loop/all` - Get all loops
 - `POST /api/loop/like/:loopId` - Like loop
@@ -314,17 +338,20 @@ VIBE/
 - `DELETE /api/loop/:loopId` - Delete loop
 
 ### Stories
+
 - `POST /api/story/create` - Create new story
 - `GET /api/story/user/:userId` - Get user's story
 - `POST /api/story/:storyId/view` - Mark story as viewed
 - `DELETE /api/story/:storyId` - Delete story
 
 ### Messages
+
 - `POST /api/message/send` - Send message
 - `GET /api/message/:userId` - Get chat history with user
 - `GET /api/message/all-conversations` - Get all conversations
 
 ### Notifications
+
 - `GET /api/notification/all` - Get all notifications
 - `POST /api/notification/:notificationId/read` - Mark notification as read
 - `DELETE /api/notification/:notificationId` - Delete notification
@@ -345,35 +372,41 @@ VIBE/
 ## 🎨 User Interface
 
 ### Home Page
+
 - Timeline feed of posts from followed users
 - Stories carousel at the top
 - Suggested users sidebar
 - Online users indicator
 
 ### Profile Page
+
 - User profile information
 - User's posts and loops
 - Follow/Unfollow button
 - Bio, profession, and gender details
 
 ### Messages Page
+
 - Conversation list with recent chats
 - Online status indicators
 - Message history
 - Image sharing in chats
 
 ### Stories Page
+
 - View stories from followed users
 - Create and share new stories
 - Viewer tracking
 - 24-hour auto-expiry
 
 ### Loops Page
+
 - Infinite scroll through short videos
 - Like, comment, and engage features
 - Create and share loops
 
 ### Notifications
+
 - Real-time notification alerts
 - Different notification types (like, comment, follow)
 - Read/unread status
@@ -383,9 +416,11 @@ VIBE/
 ## 🌐 Real-Time Features
 
 ### Socket.io Implementation
+
 The app uses Socket.io for real-time communication:
 
 **Events:**
+
 - `connection` - User connects to socket
 - `getOnlineUsers` - Broadcast online users list
 - `newNotification` - Send notification when user gets liked/commented/followed
@@ -393,6 +428,7 @@ The app uses Socket.io for real-time communication:
 - `receiveMessage` - Receive messages in real-time
 
 **User Online Tracking:**
+
 - Users automatically broadcast online status on connection
 - Online users list updates in real-time
 - Disconnect automatically removes user from online list
@@ -402,6 +438,7 @@ The app uses Socket.io for real-time communication:
 ## 📊 Database Schema
 
 ### User Model
+
 ```javascript
 {
   name: String,
@@ -426,6 +463,7 @@ The app uses Socket.io for real-time communication:
 ```
 
 ### Post Model
+
 ```javascript
 {
   author: ObjectId,
@@ -439,6 +477,7 @@ The app uses Socket.io for real-time communication:
 ```
 
 ### Message Model
+
 ```javascript
 {
   sender: ObjectId,
@@ -480,7 +519,7 @@ This project is open source and available under the ISC License.
 
 ## 👨‍💻 Developer
 
-Created by Krishan
+Created by Yash
 
 ---
 
@@ -500,4 +539,4 @@ For issues, questions, or suggestions, please open an issue on the repository.
 
 ---
 
-**Happy Vibing! 🎉**# VybeHub
+**Happy Vybing! 🎉**
